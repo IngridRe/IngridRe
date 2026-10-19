@@ -3,97 +3,119 @@ project:
   output-dir: docs
 
 # Meta
-description-meta: "Quarto Academic Website Template adapted by Dr. Gang He"
-author-meta: "Dr. Gang He"
+description-meta: >-
+  Ingrid Rebane, PhD — materials scientist specialising in polysiloxane
+  chemistry, silicone elastomers, formulation, degradation, and analytical
+  characterisation. Connecting fundamental chemistry with practical
+  materials development.
+author-meta: "Ingrid Rebane"
 
 website:
-  title: "Quarto Academic"
-  image: "https://quarto.org/quarto.png"
-  description: "Quarto Academic Website Template adapted by Dr. Gang He"
- 
-  navbar:
-    background: light  # You can change the background color here
+  title: "Ingrid Rebane, PhD"
 
-    left:   # You can comment out all navigation items here if you just like to keep the index page only
-#      - text: Home
-#        href: index.qmd
+  # Optional: replace with the path to your own photograph or website image.
+  # image: "files/profile-photo.jpg"
+
+  description: >-
+    I am a materials scientist specialising in polysiloxane chemistry and
+    silicone elastomers, with experience in synthesis, formulation,
+    degradation, and materials characterisation. My research interests
+    include gas evolution and outgassing, functional silicone composites,
+    and the relationships between chemical composition, processing,
+    and material performance.
+
+  navbar:
+    background: light
+
+    left:
+      - text: Home
+        href: index.qmd
+
       - text: About
         menu:
-          - text: News
-            href: posts.qmd#category=news
-          - text: Events
-            href: posts.qmd#category=event      
+          # Uncomment these items after replacing the template content.
+          # - text: News
+          #   href: posts.qmd#category=news
+          # - text: Events
+          #   href: posts.qmd#category=event
           - text: Contact
-            href: contact.qmd             
+            href: contact.qmd
+
       - text: Research
         menu:
-          - text: List of Publications
+          - text: Publications
             href: publications.qmd
-          - text: Selected Papers
-            href: posts.qmd#category=paper
-          - text: Grants
-            href: projects.qmd                                
-      - text: Teaching # Comment the Teaching part out to remove the Teaching page
-        href: teaching.qmd
-      - text: Outreach
-        menu:        
-        - text: Presentations
-          href: posts.qmd#category=presentation                   
-      - text: Group   # Comment the Group part out to remove the Group page
-        href: people.qmd
 
-    right: 
-      - text: CV
-        href: files/nsf-biosketch.pdf
-      - icon: github
-        href: https://github.com/drganghe/quarto-academic-website-template
-        target: _blank
-      - text: "{{< fa brands bluesky >}}"
-        href: https://bsky.app
-        target: _blank      
-      - icon: rss
-        href: posts.xml
-        target: _blank
-  
+          # Uncomment after adding your own selected papers.
+          # - text: Selected Papers
+          #   href: posts.qmd#category=paper
+
+          # Uncomment after replacing the sample projects.
+          # - text: Research Projects
+          #   href: projects.qmd
+
+      # Uncomment after adding your own teaching information.
+      # - text: Teaching
+      #   href: teaching.qmd
+
+      # Uncomment after adding your own presentations.
+      # - text: Outreach
+      #   menu:
+      #     - text: Presentations
+      #       href: posts.qmd#category=presentation
+
+      # Uncomment only if you want a group or collaborators page.
+      # - text: Group
+      #   href: people.qmd
+
+    # Uncomment this section after uploading your own CV
+    # and replacing the example GitHub address.
+    # right:
+    #   - text: CV
+    #     href: files/Ingrid-Rebane-CV.pdf
+    #   - icon: github
+    #     href: "https://github.com/YOUR-USERNAME"
+    #     target: _blank
+
   page-navigation: true
-  
-  page-footer: 
-    left: "[Your Name](http://www.github.com) &copy; <script>document.write(new Date().getFullYear())</script>" 
-    center: "Build on [Quarto Academic Website Template](https://github.com/drganghe/quarto-academic-website-template) adapted by [Dr. Gang He](http://drganghe.github.io)"
-    right:  
-      - icon: github
-        href: https://github.com/drganghe/quarto-academic-website-template
-        target: _blank
-      - text: "{{< fa brands bluesky >}}" 
-        href: https://bsky.app
-        target: _blank
-      - icon: rss
-        href: posts.xml
-        target: _blank  
-  
+
+  page-footer:
+    left: "Ingrid Rebane &copy; <script>document.write(new Date().getFullYear())</script>"
+    center: "Built with [Quarto Academic Website Template](https://github.com/drganghe/quarto-academic-website-template), adapted by [Dr. Gang He](http://drganghe.github.io)"
+
+    # Uncomment after replacing YOUR-USERNAME.
+    # right:
+    #   - icon: github
+    #     href: "https://github.com/YOUR-USERNAME"
+    #     target: _blank
+
   search:
     location: navbar
     type: textbox
-  
+
   reader-mode: true
 
   draft-mode: unlinked
-  
-  repo-url: https://github.com/drganghe/quarto-academic-website-template
-#  repo-actions: [edit, issue, source]
-  
-  open-graph: true
-  
-  twitter-card: true 
-#  card-style: summary      
-  
-  site-url: "https://drganghe.github.io/quarto-academic-website-template"
-  
-  google-analytics:
-    tracking-id: ""  # Please delete or replace with your own tracking ID
-    anonymize-ip: true 
 
-bibliography: references.bib  # Add references.bib to the root folder to enable the bibliography function
+  # Uncomment after replacing this with your own repository address.
+  # repo-url: "https://github.com/YOUR-USERNAME/YOUR-REPOSITORY"
+  # repo-actions: [edit, issue, source]
+
+  open-graph: true
+
+  twitter-card: true
+
+  # Uncomment after replacing this with your published website address.
+  # Example for a repository named YOUR-USERNAME.github.io:
+  # site-url: "https://YOUR-USERNAME.github.io"
+
+  # Optional: enable only if you decide to use Google Analytics
+  # and have your own tracking ID.
+  # google-analytics:
+  #   tracking-id: ""
+  #   anonymize-ip: true
+
+bibliography: references.bib
 
 format:
   html:
@@ -108,6 +130,9 @@ format:
     link-external-icon: false
     link-external-newwindow: true
     email-obfuscation: javascript
-    link-external-filter: '^(?:http:|https:)\/\/drganghe\.github\.io\/custom'
-    include-in-header: "files/includes/_academic.qmd"
 
+    # Optional: configure this for your own domain later.
+    # The template author's domain has been removed.
+    # link-external-filter: '^(?:http:|https:)\/\/YOUR-USERNAME\.github\.io'
+
+    include-in-header: "files/includes/_academic.qmd"
